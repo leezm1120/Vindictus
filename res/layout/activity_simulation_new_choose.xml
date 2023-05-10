@@ -1,0 +1,1257 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/beijingse"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context=".SimulationNewChooseActivity" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/bt_new_simulation_equipment_choose"
+            style="@style/img_setting_juhuangse_bg"
+            android:layout_height="30dp"
+            android:layout_margin="8dp" >
+
+            <TextView
+                android:id="@+id/txt_new_simulation_equipment_choose_title"
+                style="@style/text_setting"
+                android:text="装备选择" />
+
+            <ImageView
+                android:id="@+id/img_new_simulation_equipment_choose"
+                style="@style/img_setting_icon"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/icon_right" />
+        </RelativeLayout>
+        <!-- 装备选择view -->
+
+        <LinearLayout
+            android:id="@+id/view_new_simulation_equipment_choose"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                style="@style/img_setting_bg"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_margin="8dp"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        style="@style/text_spinner_item"
+                        android:layout_marginLeft="5dp"
+                        android:text="等级" />
+
+                    <Spinner
+                        android:id="@+id/new_simulation_equipment_spinner_level"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/textView1"
+                        android:dropDownWidth="100dp"
+                        android:entries="@array/equipment_level"
+                        android:spinnerMode="dropdown" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        style="@style/text_spinner_item"
+                        android:layout_marginLeft="5dp"
+                        android:text="角色" />
+
+                    <Spinner
+                        android:id="@+id/new_simulation_equipment_spinner_role"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/textView1"
+                        android:dropDownWidth="100dp"
+                        android:entries="@array/role_list"
+                        android:spinnerMode="dropdown" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        style="@style/text_spinner_item"
+                        android:layout_marginLeft="5dp"
+                        android:text="类型" />
+
+                    <Spinner
+                        android:id="@+id/new_simulation_equipment_spinner_type"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/textView1"
+                        android:dropDownWidth="100dp"
+                        android:entries="@array/simulation_equipment"
+                        android:spinnerMode="dropdown" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/new_simulation_equipment_listview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:divider="@color/baise"
+                android:dividerHeight="1px"
+                android:visibility="gone" >
+            </ListView>
+
+            <ScrollView
+                android:id="@+id/new_simulation_equipment_nine"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <!-- 武器 头手脚 盾 核心 view ↓ -->
+
+                    <RelativeLayout
+                        android:id="@+id/new_simulation_equipment_nine_wq_main_view"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginTop="6dp"
+                        android:visibility="gone" >
+
+                        <TextView
+                            android:id="@+id/new_simulation_equipment_nine_main_title"
+                            style="@style/text_setting"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true" />
+
+                        <TextView
+                            android:id="@+id/new_simulation_equipment_nine_main_pinzhi"
+                            style="@style/text_setting"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginRight="10dp"
+                            android:text="橙色" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="25dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:orientation="horizontal" >
+
+                            <!-- 输入栏1 -->
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="2" >
+
+                                <TextView
+                                    android:id="@+id/new_simulation_equipment_nine_main_title_f"
+                                    style="@style/text_nine_small_shuxingitem_new" />
+
+                                <EditText
+                                    android:id="@+id/new_simulation_equipment_nine_main_title_f_ed"
+                                    style="@style/text_simulation_edittext_new"
+                                    android:layout_toRightOf="@+id/new_simulation_equipment_nine_main_title_f" >
+                                </EditText>
+                            </RelativeLayout>
+                            <!-- 输入栏2 -->
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1" >
+
+                                <TextView
+                                    android:id="@+id/new_simulation_equipment_nine_main_title_s"
+                                    style="@style/text_nine_small_shuxingitem_new" />
+
+                                <EditText
+                                    android:id="@+id/new_simulation_equipment_nine_main_title_s_ed"
+                                    style="@style/text_simulation_edittext_new"
+                                    android:layout_toRightOf="@+id/new_simulation_equipment_nine_main_title_s" >
+                                </EditText>
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <!-- 武器 头手脚 盾 核心 view ↑ -->
+                    <!-- 武器 锐利 view ↓ -->
+
+                    <RelativeLayout
+                        android:id="@+id/new_simulation_equipment_nine_fj_ruili_view"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginTop="6dp"
+                        android:visibility="gone" >
+
+                        <TextView
+                            android:id="@+id/new_simulation_equipment_nine_ruili_title"
+                            style="@style/text_setting"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:text="锐利的传承石碎片" />
+
+                        <TextView
+                            android:id="@+id/new_simulation_equipment_nine_ruili_pinzhi"
+                            style="@style/text_setting"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginRight="10dp"
+                            android:text="橙色" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="25dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:orientation="horizontal" >
+
+                            <!-- 输入栏1 -->
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1" >
+
+                                <TextView
+                                    android:id="@+id/new_simulation_equipment_nine_ruili_title_f"
+                                    style="@style/text_nine_small_shuxingitem_new"
+                                    android:text="衡" />
+
+                                <EditText
+                                    android:id="@+id/new_simulation_equipment_nine_ruili_title_f_ed"
+                                    style="@style/text_simulation_edittext_new"
+                                    android:layout_toRightOf="@+id/new_simulation_equipment_nine_ruili_title_f" >
+                                </EditText>
+                            </RelativeLayout>
+                            <!-- 输入栏2 -->
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1" >
+
+                                <TextView
+                                    android:id="@+id/new_simulation_equipment_nine_ruili_title_s"
+                                    style="@style/text_nine_small_shuxingitem_new"
+                                    android:text="暴" />
+
+                                <EditText
+                                    android:id="@+id/new_simulation_equipment_nine_ruili_title_s_ed"
+                                    style="@style/text_simulation_edittext_new"
+                                    android:layout_toRightOf="@+id/new_simulation_equipment_nine_ruili_title_s" >
+                                </EditText>
+                            </RelativeLayout>
+
+                            <!-- 空view占位 -->
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1" >
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <!-- 武器 锐利 view ↑ -->
+
+
+                    <!-- 武器 轻盈 view ↓ -->
+
+                    <RelativeLayout
+                        android:id="@+id/new_simulation_equipment_nine_fj_qingying_view"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginTop="6dp"
+                        android:visibility="gone" >
+
+                        <TextView
+                            android:id="@+id/new_simulation_equipment_nine_qingying_title"
+                            style="@style/text_setting"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:text="轻盈的传承石碎片" />
+
+                        <TextView
+                            android:id="@+id/new_simulation_equipment_nine_qingying_pinzhi"
+                            style="@style/text_setting"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginRight="10dp"
+                            android:text="橙色" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="25dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:orientation="horizontal" >
+
+                            <!-- 输入栏1 -->
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1" >
+
+                                <TextView
+                                    android:id="@+id/new_simulation_equipment_nine_qingying_title_f"
+                                    style="@style/text_nine_small_shuxingitem_new"
+                                    android:text="暴" />
+
+                                <EditText
+                                    android:id="@+id/new_simulation_equipment_nine_qingying_title_f_ed"
+                                    style="@style/text_simulation_edittext_new"
+                                    android:layout_toRightOf="@+id/new_simulation_equipment_nine_qingying_title_f" >
+                                </EditText>
+                            </RelativeLayout>
+                            <!-- 输入栏2 -->
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1" >
+
+                                <TextView
+                                    android:id="@+id/new_simulation_equipment_nine_qingying_title_s"
+                                    style="@style/text_nine_small_shuxingitem_new"
+                                    android:text="速" />
+
+                                <EditText
+                                    android:id="@+id/new_simulation_equipment_nine_qingying_title_s_ed"
+                                    style="@style/text_simulation_edittext_new"
+                                    android:layout_toRightOf="@+id/new_simulation_equipment_nine_qingying_title_s" >
+                                </EditText>
+                            </RelativeLayout>
+
+                            <!-- 空view占位 -->
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1" >
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <!-- 武器 轻盈 view ↑ -->
+
+
+                    <!-- 武器 稳定 view ↓ -->
+
+                    <RelativeLayout
+                        android:id="@+id/new_simulation_equipment_nine_fj_wending_view"
+                        android:layout_width="fill_parent"
+                        android:layout_height="75dp"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginTop="6dp"
+                        android:visibility="gone" >
+
+                        <TextView
+                            android:id="@+id/new_simulation_equipment_nine_wending_title"
+                            style="@style/text_setting"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:text="稳定的传承石碎片" />
+
+                        <TextView
+                            android:id="@+id/new_simulation_equipment_nine_wending_pinzhi"
+                            style="@style/text_setting"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginRight="10dp"
+                            android:text="橙色" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="25dp"
+                            android:layout_above="@+id/qaz11"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:orientation="horizontal" >
+
+                            <!-- 输入栏1 -->
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1" >
+
+                                <TextView
+                                    android:id="@+id/new_simulation_equipment_nine_wending_title_f"
+                                    style="@style/text_nine_small_shuxingitem_new"
+                                    android:text="衡" />
+
+                                <EditText
+                                    android:id="@+id/new_simulation_equipment_nine_wending_title_f_ed"
+                                    style="@style/text_simulation_edittext_new"
+                                    android:layout_toRightOf="@+id/new_simulation_equipment_nine_wending_title_f" >
+                                </EditText>
+                            </RelativeLayout>
+                            <!-- 输入栏2 -->
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1" >
+
+                                <TextView
+                                    android:id="@+id/new_simulation_equipment_nine_wending_title_s"
+                                    style="@style/text_nine_small_shuxingitem_new"
+                                    android:text="力" />
+
+                                <EditText
+                                    android:id="@+id/new_simulation_equipment_nine_wending_title_s_ed"
+                                    style="@style/text_simulation_edittext_new"
+                                    android:layout_toRightOf="@+id/new_simulation_equipment_nine_wending_title_s" >
+                                </EditText>
+                            </RelativeLayout>
+
+                            <!-- 输入栏3 -->
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1" >
+
+                                <TextView
+                                    android:id="@+id/new_simulation_equipment_nine_wending_title_t"
+                                    style="@style/text_nine_small_shuxingitem_new"
+                                    android:text="智" />
+
+                                <EditText
+                                    android:id="@+id/new_simulation_equipment_nine_wending_title_t_ed"
+                                    style="@style/text_simulation_edittext_new"
+                                    android:layout_toRightOf="@+id/new_simulation_equipment_nine_wending_title_t" >
+                                </EditText>
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/qaz11"
+                            android:layout_width="fill_parent"
+                            android:layout_height="25dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:orientation="horizontal" >
+
+                            <!-- 输入栏1 -->
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1" >
+
+                                <TextView
+                                    android:id="@+id/new_simulation_equipment_nine_wending_title_fo"
+                                    style="@style/text_nine_small_shuxingitem_new"
+                                    android:text="敏" />
+
+                                <EditText
+                                    android:id="@+id/new_simulation_equipment_nine_wending_title_fo_ed"
+                                    style="@style/text_simulation_edittext_new"
+                                    android:layout_toRightOf="@+id/new_simulation_equipment_nine_wending_title_fo" >
+                                </EditText>
+                            </RelativeLayout>
+                            <!-- 输入栏2 -->
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1" >
+
+                                <TextView
+                                    android:id="@+id/new_simulation_equipment_nine_wending_title_fi"
+                                    style="@style/text_nine_small_shuxingitem_new"
+                                    android:text="意" />
+
+                                <EditText
+                                    android:id="@+id/new_simulation_equipment_nine_wending_title_fi_ed"
+                                    style="@style/text_simulation_edittext_new"
+                                    android:layout_toRightOf="@+id/new_simulation_equipment_nine_wending_title_fi" >
+                                </EditText>
+                            </RelativeLayout>
+
+                            <!-- 空view占位 -->
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1" >
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <!-- 武器 稳定 view ↑ -->
+
+
+                    <!-- 武器 完美 view ↓ -->
+
+                    <RelativeLayout
+                        android:id="@+id/new_simulation_equipment_nine_fj_wanmei_view"
+                        android:layout_width="fill_parent"
+                        android:layout_height="75dp"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginTop="6dp"
+                        android:visibility="gone" >
+
+                        <TextView
+                            android:id="@+id/new_simulation_equipment_nine_wanmei_title"
+                            style="@style/text_setting"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:text="完美的传承石碎片" />
+
+                        <TextView
+                            android:id="@+id/new_simulation_equipment_nine_wanmei_pinzhi"
+                            style="@style/text_setting"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginRight="10dp"
+                            android:text="橙色" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="25dp"
+                            android:layout_above="@+id/qaz11"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:orientation="horizontal" >
+
+                            <!-- 输入栏1 -->
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1" >
+
+                                <TextView
+                                    android:id="@+id/new_simulation_equipment_nine_wanmei_title_f"
+                                    style="@style/text_nine_small_shuxingitem_new"
+                                    android:text="攻" />
+
+                                <EditText
+                                    android:id="@+id/new_simulation_equipment_nine_wanmei_title_f_ed"
+                                    style="@style/text_simulation_edittext_new"
+                                    android:layout_toRightOf="@+id/new_simulation_equipment_nine_wanmei_title_f" >
+                                </EditText>
+                            </RelativeLayout>
+                            <!-- 输入栏2 -->
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1" >
+
+                                <TextView
+                                    android:id="@+id/new_simulation_equipment_nine_wanmei_title_s"
+                                    style="@style/text_nine_small_shuxingitem_new"
+                                    android:text="力" />
+
+                                <EditText
+                                    android:id="@+id/new_simulation_equipment_nine_wanmei_title_s_ed"
+                                    style="@style/text_simulation_edittext_new"
+                                    android:layout_toRightOf="@+id/new_simulation_equipment_nine_wanmei_title_s" >
+                                </EditText>
+                            </RelativeLayout>
+
+                            <!-- 输入栏3 -->
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1" >
+
+                                <TextView
+                                    android:id="@+id/new_simulation_equipment_nine_wanmei_title_t"
+                                    style="@style/text_nine_small_shuxingitem_new"
+                                    android:text="智" />
+
+                                <EditText
+                                    android:id="@+id/new_simulation_equipment_nine_wanmei_title_t_ed"
+                                    style="@style/text_simulation_edittext_new"
+                                    android:layout_toRightOf="@+id/new_simulation_equipment_nine_wanmei_title_t" >
+                                </EditText>
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/qaz11"
+                            android:layout_width="fill_parent"
+                            android:layout_height="25dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:orientation="horizontal" >
+
+                            <!-- 输入栏1 -->
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1" >
+
+                                <TextView
+                                    android:id="@+id/new_simulation_equipment_nine_wanmei_title_fo"
+                                    style="@style/text_nine_small_shuxingitem_new"
+                                    android:text="敏" />
+
+                                <EditText
+                                    android:id="@+id/new_simulation_equipment_nine_wanmei_title_fo_ed"
+                                    style="@style/text_simulation_edittext_new"
+                                    android:layout_toRightOf="@+id/new_simulation_equipment_nine_wanmei_title_fo" >
+                                </EditText>
+                            </RelativeLayout>
+                            <!-- 输入栏2 -->
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1" >
+
+                                <TextView
+                                    android:id="@+id/new_simulation_equipment_nine_wanmei_title_fi"
+                                    style="@style/text_nine_small_shuxingitem_new"
+                                    android:text="意" />
+
+                                <EditText
+                                    android:id="@+id/new_simulation_equipment_nine_wanmei_title_fi_ed"
+                                    style="@style/text_simulation_edittext_new"
+                                    android:layout_toRightOf="@+id/new_simulation_equipment_nine_wanmei_title_fi" >
+                                </EditText>
+                            </RelativeLayout>
+
+                            <!-- 空view占位 -->
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1" >
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <!-- 武器 完美 view ↑ -->
+
+
+                    <!-- 防具结实 view ↓ -->
+
+                    <RelativeLayout
+                        android:id="@+id/new_simulation_equipment_nine_fj_jieshi_view"
+                        android:layout_width="fill_parent"
+                        android:layout_height="75dp"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginTop="6dp"
+                        android:visibility="gone" >
+
+                        <TextView
+                            android:id="@+id/new_simulation_equipment_nine_jieshi_title"
+                            style="@style/text_setting"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:text="结实的传承石碎片" />
+
+                        <TextView
+                            android:id="@+id/new_simulation_equipment_nine_jieshi_pinzhi"
+                            style="@style/text_setting"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginRight="10dp"
+                            android:text="橙色" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="25dp"
+                            android:layout_above="@+id/qaz11"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:orientation="horizontal" >
+
+                            <!-- 输入栏1 -->
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1" >
+
+                                <TextView
+                                    android:id="@+id/new_simulation_equipment_nine_jieshi_title_f"
+                                    style="@style/text_nine_small_shuxingitem_new"
+                                    android:text="力" />
+
+                                <EditText
+                                    android:id="@+id/new_simulation_equipment_nine_jieshi_title_f_ed"
+                                    style="@style/text_simulation_edittext_new"
+                                    android:layout_toRightOf="@+id/new_simulation_equipment_nine_jieshi_title_f" >
+                                </EditText>
+                            </RelativeLayout>
+                            <!-- 输入栏2 -->
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1" >
+
+                                <TextView
+                                    android:id="@+id/new_simulation_equipment_nine_jieshi_title_s"
+                                    style="@style/text_nine_small_shuxingitem_new"
+                                    android:text="智" />
+
+                                <EditText
+                                    android:id="@+id/new_simulation_equipment_nine_jieshi_title_s_ed"
+                                    style="@style/text_simulation_edittext_new"
+                                    android:layout_toRightOf="@+id/new_simulation_equipment_nine_jieshi_title_s" >
+                                </EditText>
+                            </RelativeLayout>
+
+                            <!-- 输入栏3 -->
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1" >
+
+                                <TextView
+                                    android:id="@+id/new_simulation_equipment_nine_jieshi_title_t"
+                                    style="@style/text_nine_small_shuxingitem_new"
+                                    android:text="抗" />
+
+                                <EditText
+                                    android:id="@+id/new_simulation_equipment_nine_jieshi_title_t_ed"
+                                    style="@style/text_simulation_edittext_new"
+                                    android:layout_toRightOf="@+id/new_simulation_equipment_nine_jieshi_title_t" >
+                                </EditText>
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/qaz11"
+                            android:layout_width="fill_parent"
+                            android:layout_height="25dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:orientation="horizontal" >
+
+                            <!-- 输入栏1 -->
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1" >
+
+                                <TextView
+                                    android:id="@+id/new_simulation_equipment_nine_jieshi_title_fo"
+                                    style="@style/text_nine_small_shuxingitem_new"
+                                    android:text="敏" />
+
+                                <EditText
+                                    android:id="@+id/new_simulation_equipment_nine_jieshi_title_fo_ed"
+                                    style="@style/text_simulation_edittext_new"
+                                    android:layout_toRightOf="@+id/new_simulation_equipment_nine_jieshi_title_fo" >
+                                </EditText>
+                            </RelativeLayout>
+                            <!-- 输入栏2 -->
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1" >
+
+                                <TextView
+                                    android:id="@+id/new_simulation_equipment_nine_jieshi_title_fi"
+                                    style="@style/text_nine_small_shuxingitem_new"
+                                    android:text="意" />
+
+                                <EditText
+                                    android:id="@+id/new_simulation_equipment_nine_jieshi_title_fi_ed"
+                                    style="@style/text_simulation_edittext_new"
+                                    android:layout_toRightOf="@+id/new_simulation_equipment_nine_jieshi_title_fi" >
+                                </EditText>
+                            </RelativeLayout>
+
+                            <!-- 空view占位 -->
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1" >
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <!-- 防具 结实 view ↑ -->
+                    <!-- 上下 光滑 view ↓ -->
+
+                    <RelativeLayout
+                        android:id="@+id/new_simulation_equipment_nine_fj_guanghua_view"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginTop="6dp"
+                        android:visibility="gone" >
+
+                        <TextView
+                            android:id="@+id/new_simulation_equipment_nine_guanghua_title"
+                            style="@style/text_setting"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:text="光滑的传承石碎片" />
+
+                        <TextView
+                            android:id="@+id/new_simulation_equipment_nine_guanghua_pinzhi"
+                            style="@style/text_setting"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginRight="10dp"
+                            android:text="橙色" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="25dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:orientation="horizontal" >
+
+                            <!-- 输入栏1 -->
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1" >
+
+                                <TextView
+                                    android:id="@+id/new_simulation_equipment_nine_guanghua_title_f"
+                                    style="@style/text_nine_small_shuxingitem_new"
+                                    android:text="防" />
+
+                                <EditText
+                                    android:id="@+id/new_simulation_equipment_nine_guanghua_title_f_ed"
+                                    style="@style/text_simulation_edittext_new"
+                                    android:layout_toRightOf="@+id/new_simulation_equipment_nine_guanghua_title_f" >
+                                </EditText>
+                            </RelativeLayout>
+                            <!-- 输入栏2 -->
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1" >
+
+                                <TextView
+                                    android:id="@+id/new_simulation_equipment_nine_guanghua_title_s"
+                                    style="@style/text_nine_small_shuxingitem_new"
+                                    android:text="抗" />
+
+                                <EditText
+                                    android:id="@+id/new_simulation_equipment_nine_guanghua_title_s_ed"
+                                    style="@style/text_simulation_edittext_new"
+                                    android:layout_toRightOf="@+id/new_simulation_equipment_nine_guanghua_title_s" >
+                                </EditText>
+                            </RelativeLayout>
+
+                            <!-- 空view占位 -->
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1" >
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <!-- 上下  光滑 view ↑ -->
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <!-- 90装备底部按钮 ↓ -->
+
+        <LinearLayout
+            android:id="@+id/new_simulation_equipment_nine_bt"
+            style="@style/img_setting_bg"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_margin="8dp"
+            android:visibility="gone" >
+
+            <RelativeLayout
+                android:id="@+id/bt_new_simulation_choose_nine_clean"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    style="@style/text_spinner_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="清空当前" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/bt_new_simulation_choose_nine_random"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    style="@style/text_spinner_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="随机数值" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/bt_new_simulation_choose_nine_save"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    style="@style/text_spinner_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="保存装备" />
+            </RelativeLayout>
+        </LinearLayout>
+        <!-- 90装备底部按钮 ↑ -->
+
+        <RelativeLayout
+            android:id="@+id/bt_new_simulation_enchant_choose"
+            style="@style/img_setting_juhuangse_bg"
+            android:layout_height="30dp"
+            android:layout_margin="8dp" >
+
+            <ImageView
+                android:id="@+id/img_new_simulation_enchant_choose"
+                style="@style/img_setting_icon"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/icon_right" />
+
+            <TextView
+                android:id="@+id/txt_new_simulation_enchant_choose_title"
+                style="@style/text_setting"
+                android:text="附魔选择" />
+        </RelativeLayout>
+        <!-- 附魔选择view -->
+
+        <LinearLayout
+            android:id="@+id/view_new_simulation_enchant_choose"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                style="@style/img_setting_bg"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_margin="8dp"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        style="@style/text_spinner_item"
+                        android:layout_marginLeft="10dp"
+                        android:text="首次" />
+
+                    <Spinner
+                        android:id="@+id/new_simulation_enchant_spinner_level_first"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/textView1"
+                        android:dropDownWidth="100dp"
+                        android:entries="@array/enchant_level"
+                        android:spinnerMode="dropdown" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        style="@style/text_spinner_item"
+                        android:layout_marginLeft="10dp"
+                        android:text="进阶" />
+
+                    <Spinner
+                        android:id="@+id/new_simulation_enchant_spinner_level_second"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/textView2"
+                        android:dropDownWidth="100dp"
+                        android:entries="@array/enchant_level"
+                        android:spinnerMode="dropdown" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <ListView
+                    android:id="@+id/new_simulation_enchant_listview_first"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:divider="@color/baise"
+                    android:dividerHeight="1px" >
+                </ListView>
+
+                <ListView
+                    android:id="@+id/new_simulation_enchant_listview_second"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:divider="@color/baise"
+                    android:dividerHeight="1px" >
+                </ListView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/bt_new_simulation_other_choose"
+            style="@style/img_setting_juhuangse_bg"
+            android:layout_height="30dp"
+            android:layout_margin="8dp" >
+
+            <ImageView
+                android:id="@+id/img_new_simulation_other_choose"
+                style="@style/img_setting_icon"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/icon_right" />
+
+            <TextView
+                style="@style/text_setting"
+                android:text="其他选择" />
+        </RelativeLayout>
+        <!-- 其他选择view -->
+
+        <LinearLayout
+            android:id="@+id/view_new_simulation_other_choose"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                style="@style/img_setting_bg"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_margin="8dp"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        style="@style/text_spinner_item"
+                        android:layout_marginLeft="5dp"
+                        android:text="强化" />
+
+                    <Spinner
+                        android:id="@+id/new_simulation_other_spinner_qianghua"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/textView3"
+                        android:dropDownWidth="100dp"
+                        android:entries="@array/simulation_equipment_strengthening"
+                        android:spinnerMode="dropdown" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        style="@style/text_spinner_item"
+                        android:layout_marginLeft="5dp"
+                        android:text="精灵石" />
+
+                    <Spinner
+                        android:id="@+id/new_simulation_other_spinner_jinglingshi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/textView4"
+                        android:dropDownWidth="100dp"
+                        android:entries="@array/simulation_equipment_infusion"
+                        android:spinnerMode="dropdown" />
+                </RelativeLayout>
+                
+                 <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/textView55"
+                        style="@style/text_spinner_item"
+                        android:layout_marginLeft="5dp"
+                        android:text="品质" />
+
+                    <Spinner
+                        android:id="@+id/new_simulation_other_spinner_pinzhi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/textView55"
+                        android:dropDownWidth="100dp"
+                        android:entries="@array/simulation_equipment_character"
+                        android:spinnerMode="dropdown" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp" >
+
+                <TextView
+                    android:id="@+id/qa1"
+                    style="@style/text_setting"
+                    android:text="强化：" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/new_simulation_txt_qianghua"
+                style="@style/text_setting"
+                android:textColor="@color/juhuangse" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp" >
+
+                <TextView
+                    android:id="@+id/qa1"
+                    style="@style/text_setting"
+                    android:text="精灵石：" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/new_simulation_txt_jinglingshi"
+                style="@style/text_setting"
+                android:textColor="@color/juhuangse" />
+             <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp" >
+
+                <TextView
+                    android:id="@+id/qa1"
+                    style="@style/text_setting"
+                    android:text="品质：" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/new_simulation_txt_pinzhi"
+                style="@style/text_setting"
+                android:textColor="@color/juhuangse" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/img_setting_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_margin="8dp" >
+
+        <RelativeLayout
+            android:id="@+id/bt_new_simulation_cancel"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                style="@style/text_spinner_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="取消选择" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bt_new_simulation_save"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                style="@style/text_spinner_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="保存所有" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/new_simulation_activity_adview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </FrameLayout>
+
+</LinearLayout>

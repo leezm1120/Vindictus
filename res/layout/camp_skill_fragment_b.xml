@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/beijingse"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <TextView
+                android:id="@+id/camp_skill_show_gm_txt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="暗黑骑士1变技能"
+                android:textColor="@color/juhuangse"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- 暗黑1变第一行 -->
+
+            <LinearLayout
+                android:id="@+id/camp_skill_show_gm_one"
+                android:layout_width="fill_parent"
+                android:layout_height="75dp"
+                android:layout_below="@+id/camp_skill_show_gm_txt1"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/camp_ha1_view"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:src="@drawable/camp_ha1" />
+
+                    <TextView
+                        android:id="@+id/camp_ha1_txt"
+                        style="@style/text_camp_skill"
+                        android:text="0/3" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/camp_ha2_view"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:src="@drawable/camp_ha2" />
+
+                    <TextView
+                        android:id="@+id/camp_ha2_txt"
+                        style="@style/text_camp_skill"
+                        android:text="0/3" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" />
+
+                <RelativeLayout
+                    android:id="@+id/camp_ha3_view"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:src="@drawable/camp_ha3" />
+
+                    <TextView
+                        android:id="@+id/camp_ha3_txt"
+                        style="@style/text_camp_skill"
+                        android:text="0/5" />
+                </RelativeLayout>
+            </LinearLayout>
+            <!-- 暗黑1变第二行 -->
+
+            <LinearLayout
+                android:id="@+id/camp_skill_show_gm_two"
+                android:layout_width="fill_parent"
+                android:layout_height="75dp"
+                android:layout_below="@+id/camp_skill_show_gm_one"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/camp_ha4_view"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:src="@drawable/camp_ha4" />
+
+                    <TextView
+                        android:id="@+id/camp_ha4_txt"
+                        style="@style/text_camp_skill"
+                        android:text="0/5" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/camp_ha5_view"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:src="@drawable/camp_ha5" />
+
+                    <TextView
+                        android:id="@+id/camp_ha5_txt"
+                        style="@style/text_camp_skill"
+                        android:text="0/5" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/camp_ha6_view"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:src="@drawable/camp_ha6" />
+
+                    <TextView
+                        android:id="@+id/camp_ha6_txt"
+                        style="@style/text_camp_skill"
+                        android:text="0/5" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+            <!-- 暗黑1变第三行 -->
+
+            <LinearLayout
+                android:id="@+id/camp_skill_show_gm_three"
+                android:layout_width="fill_parent"
+                android:layout_height="75dp"
+                android:layout_below="@+id/camp_skill_show_gm_two"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="3" />
+
+                <RelativeLayout
+                    android:id="@+id/camp_ha7_view"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:src="@drawable/camp_ha7" />
+
+                    <TextView
+                        android:id="@+id/camp_ha7_txt"
+                        style="@style/text_camp_skill"
+                        android:text="0/5" />
+                </RelativeLayout>
+            </LinearLayout>
+            <!-- 暗黑1变第四行 -->
+
+            <LinearLayout
+                android:id="@+id/camp_skill_show_gm_four"
+                android:layout_width="fill_parent"
+                android:layout_height="75dp"
+                android:layout_below="@+id/camp_skill_show_gm_three"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" />
+
+                <RelativeLayout
+                    android:id="@+id/camp_ha8_view"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:src="@drawable/camp_ha8" />
+
+                    <TextView
+                        android:id="@+id/camp_ha8_txt"
+                        style="@style/text_camp_skill"
+                        android:text="0/3" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" />
+
+                <RelativeLayout
+                    android:id="@+id/camp_ha9_view"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:src="@drawable/camp_ha9" />
+
+                    <TextView
+                        android:id="@+id/camp_ha9_txt"
+                        style="@style/text_camp_skill"
+                        android:text="0/1" />
+                </RelativeLayout>
+            </LinearLayout>
+            <!-- 暗黑1变第五行 -->
+
+            <LinearLayout
+                android:id="@+id/camp_skill_show_gm_five"
+                android:layout_width="fill_parent"
+                android:layout_height="75dp"
+                android:layout_below="@+id/camp_skill_show_gm_four"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" />
+
+                <RelativeLayout
+                    android:id="@+id/camp_ha10_view"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:src="@drawable/camp_ha10" />
+
+                    <TextView
+                        android:id="@+id/camp_ha10_txt"
+                        style="@style/text_camp_skill"
+                        android:text="0/1" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/camp_skill_show_gm_txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/camp_skill_show_gm_five"
+                android:layout_margin="5dp"
+                android:text="暗黑骑士2变技能"
+                android:textColor="@color/juhuangse"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- 暗黑2变第1行 -->
+
+            <LinearLayout
+                android:id="@+id/camp_skill_show_gmt_one"
+                android:layout_width="fill_parent"
+                android:layout_height="75dp"
+                android:layout_below="@+id/camp_skill_show_gm_txt2"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/camp_ha_1_view"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:src="@drawable/camp_ha_1" />
+
+                    <TextView
+                        android:id="@+id/camp_ha_1_txt"
+                        style="@style/text_camp_skill"
+                        android:text="0/3" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/camp_ha_2_view"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:src="@drawable/camp_ha_2" />
+
+                    <TextView
+                        android:id="@+id/camp_ha_2_txt"
+                        style="@style/text_camp_skill"
+                        android:text="0/3" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" />
+
+                <RelativeLayout
+                    android:id="@+id/camp_ha_3_view"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:src="@drawable/camp_ha_3" />
+
+                    <TextView
+                        android:id="@+id/camp_ha_3_txt"
+                        style="@style/text_camp_skill"
+                        android:text="0/5" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!-- 暗黑2变第2行 -->
+
+            <LinearLayout
+                android:id="@+id/camp_skill_show_gmt_two"
+                android:layout_width="fill_parent"
+                android:layout_height="75dp"
+                android:layout_below="@+id/camp_skill_show_gmt_one"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2" />
+
+                <RelativeLayout
+                    android:id="@+id/camp_ha_4_view"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:src="@drawable/camp_ha_4" />
+
+                    <TextView
+                        android:id="@+id/camp_ha_4_txt"
+                        style="@style/text_camp_skill"
+                        android:text="0/3" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/camp_ha_5_view"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:src="@drawable/camp_ha_5" />
+
+                    <TextView
+                        android:id="@+id/camp_ha_5_txt"
+                        style="@style/text_camp_skill"
+                        android:text="0/1" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!-- 暗黑2变第3行 -->
+
+            <LinearLayout
+                android:id="@+id/camp_skill_show_gmt_three"
+                android:layout_width="fill_parent"
+                android:layout_height="75dp"
+                android:layout_below="@+id/camp_skill_show_gmt_two"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/camp_ha_6_view"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:src="@drawable/camp_ha_6" />
+
+                    <TextView
+                        android:id="@+id/camp_ha_6_txt"
+                        style="@style/text_camp_skill"
+                        android:text="0/5" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="3" />
+            </LinearLayout>
+
+            <!-- 暗黑2变第4行 -->
+
+            <LinearLayout
+                android:id="@+id/camp_skill_show_gmt_four"
+                android:layout_width="fill_parent"
+                android:layout_height="75dp"
+                android:layout_below="@+id/camp_skill_show_gmt_three"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/camp_ha_7_view"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:src="@drawable/camp_ha_7" />
+
+                    <TextView
+                        android:id="@+id/camp_ha_7_txt"
+                        style="@style/text_camp_skill"
+                        android:text="0/3" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2" />
+
+                <RelativeLayout
+                    android:id="@+id/camp_ha_8_view"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:src="@drawable/camp_ha_8" />
+
+                    <TextView
+                        android:id="@+id/camp_ha_8_txt"
+                        style="@style/text_camp_skill"
+                        android:text="0/5" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!-- 暗黑2变第5行 -->
+
+            <LinearLayout
+                android:id="@+id/camp_skill_show_gmt_five"
+                android:layout_width="fill_parent"
+                android:layout_height="75dp"
+                android:layout_below="@+id/camp_skill_show_gmt_four"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" />
+
+                <RelativeLayout
+                    android:id="@+id/camp_ha_9_view"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:src="@drawable/camp_ha_9" />
+
+                    <TextView
+                        android:id="@+id/camp_ha_9_txt"
+                        style="@style/text_camp_skill"
+                        android:text="0/1" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/camp_skill_show_gmt_five" />
+        </RelativeLayout>
+    </ScrollView>
+
+     <LinearLayout
+        style="@style/img_setting_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_margin="10dp" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/camp_ha_syjnd_txt"
+                style="@style/text_spinner_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="剩余技能点：40" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bt_camp_ha_clean"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                style="@style/text_spinner_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="清空全部" />
+        </RelativeLayout>
+    </LinearLayout>
+    
+</LinearLayout>

@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/beijingse" >
+
+<LinearLayout android:layout_width="fill_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal"
+    android:background="@color/qianlanse">
+
+    <Spinner
+        android:id="@+id/manual_search_spinner"
+        android:layout_width="80dp"
+		android:layout_height="fill_parent"
+		android:dropDownWidth="80dp"
+                android:entries="@array/manual_search"
+                android:spinnerMode="dropdown"
+		 />
+
+    <EditText
+        android:id="@+id/manual_search_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:ems="10" >
+
+    </EditText>
+    <ImageView 
+        android:id="@+id/manual_search_imageview"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/icon_sousuo"/>
+    
+    
+</LinearLayout>
+<ListView
+    android:id="@+id/manual_search_enchant_listview"
+    android:layout_width="fill_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:divider="@color/white"
+    android:dividerHeight="1px" >
+</ListView>
+<ListView
+    android:id="@+id/manual_search_equipment_listview"
+    android:layout_width="fill_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:divider="@color/white"
+    android:dividerHeight="1px"
+    android:visibility="gone" >
+</ListView>
+<FrameLayout
+        android:id="@+id/manula_search_activity_adview" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </FrameLayout>
+</LinearLayout>

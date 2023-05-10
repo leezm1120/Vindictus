@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@color/beijingse"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/found_title_title"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            style="@style/text_big_title"
+            android:layout_centerVertical="true"
+            android:text="1"/>
+
+        <TextView
+            android:id="@+id/found_title_remarks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#FF0000"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/found_title_title"
+            style="@style/text_small_tips" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/found_title_type"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="ACBC"
+            android:gravity="center_vertical"
+            style="@style/text_small_title" />
+
+        <TextView
+            android:id="@+id/found_title_area"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:text="1"
+            android:gravity="right|center_vertical"
+            style="@style/text_small_title"  />
+
+        <TextView
+            android:id="@+id/found_title_carbonf"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:gravity="right|center_vertical"
+            android:text="1"
+            style="@style/text_small_title" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/found_title_channel"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="3"
+            android:text="3" 
+            android:gravity="center_vertical"
+            style="@style/text_second_title"
+            />
+
+        
+    </LinearLayout>
+
+</LinearLayout>

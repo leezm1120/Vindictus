@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_pop_up_window"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:layout_margin="10dp"
+        android:id="@+id/camp_skill_show_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="技能ABC" />
+
+    <RelativeLayout
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp" >
+
+        <ImageView
+            android:id="@+id/camp_skill_show_add"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/icon_sum" />
+
+        <ImageView
+            android:layout_marginLeft="15dp"
+            android:id="@+id/camp_skill_show_minus"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@+id/camp_skill_show_add"
+            android:src="@drawable/icon_minus" />
+    </RelativeLayout>
+
+</LinearLayout>

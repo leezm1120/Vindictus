@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/beijingse"
+    android:orientation="vertical" >
+
+    <!-- title bar -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@color/shenlanse" >
+
+        <com.leezm.vindictus.utils.MarqueeTextView
+            android:id="@+id/found_text_notice"
+            style="@style/text_spinner_item"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="20dp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/text_view_setting"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/found_bt_area_tips"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:padding="12dp"
+                        android:src="@drawable/icon_gonglue" />
+
+                    <TextView
+                        style="@style/text_found_three"
+                        android:layout_centerHorizontal="true"
+                        android:padding="5dp"
+                        android:text="游戏攻略" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/found_bt_qhfm"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:padding="14dp"
+                        android:src="@drawable/icon_mobang" />
+
+                    <TextView
+                        style="@style/text_found_three"
+                        android:layout_centerHorizontal="true"
+                        android:padding="5dp"
+                        android:text="强化附魔" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/found_bt_equipmentskill"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:padding="12dp"
+                        android:src="@drawable/icon_jineng" />
+
+                    <TextView
+                        style="@style/text_found_three"
+                        android:layout_centerHorizontal="true"
+                        android:padding="5dp"
+                        android:text="装备技能" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="20dp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/text_view_setting"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/found_title_goto"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:padding="12dp"
+                        android:src="@drawable/icon_titlel" />
+
+                    <TextView
+                        style="@style/text_found_three"
+                        android:layout_centerHorizontal="true"
+                        android:padding="5dp"
+                        android:text="头衔列表" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/found_boss_goto"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:padding="15dp"
+                        android:src="@drawable/icon_bossshux" />
+
+                    <TextView
+                        style="@style/text_found_three"
+                        android:layout_centerHorizontal="true"
+                        android:padding="5dp"
+                        android:text="BOSS属性" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/found_apshuhui"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:padding="15dp"
+                        android:src="@drawable/icon_apjisuan" />
+
+                    <TextView
+                        style="@style/text_found_three"
+                        android:layout_centerHorizontal="true"
+                        android:padding="5dp"
+                        android:text="赎回计算" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/found_tujian_view"
+                android:layout_width="fill_parent"
+                android:layout_height="20dp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/text_view_setting"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/found_tujian"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        android:padding="12dp"
+                        android:src="@drawable/icon_tujian" />
+
+                    <TextView
+                        style="@style/text_found_three"
+                        android:layout_centerHorizontal="true"
+                        android:padding="5dp"
+                        android:text="图鉴大全" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/found_zhenying"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        android:padding="15dp"
+                        android:src="@drawable/icon_zhenying" />
+
+                    <TextView
+                        style="@style/text_found_three"
+                        android:layout_centerHorizontal="true"
+                        android:padding="5dp"
+                        android:text="阵营加点" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/found_jsjd"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:padding="15dp"
+                        android:src="@drawable/icon_qbq" />
+
+                    <TextView
+                        style="@style/text_found_three"
+                        android:layout_centerHorizontal="true"
+                        android:padding="5dp"
+                        android:text="角色技能" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/found_tujian_view"
+                android:layout_width="fill_parent"
+                android:layout_height="20dp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/text_view_setting"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/found_shuju11"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        android:padding="12dp"
+                        android:src="@drawable/icon_shuju11" />
+
+                    <TextView
+                        style="@style/text_found_three"
+                        android:layout_centerHorizontal="true"
+                        android:padding="5dp"
+                        android:text="装备数据" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/found_moni11"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        android:padding="15dp"
+                        android:src="@drawable/icon_moni11" />
+
+                    <TextView
+                        style="@style/text_found_three"
+                        android:layout_centerHorizontal="true"
+                        android:padding="5dp"
+                        android:text="装备模拟" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

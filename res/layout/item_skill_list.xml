@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="90dp"
+    android:padding="10dp"
+    android:background="#2B2B2B"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30dp" >
+
+        <TextView
+            android:id="@+id/skill_item_title"
+            style="@style/text_big_title"
+            android:gravity="center_vertical"
+            android:text="轻武器" />
+
+        <TextView
+            android:id="@+id/skill_item_title_part"
+            style="@style/text_small_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/skill_item_title"
+            android:text="武器" />
+        
+        <TextView
+            android:id="@+id/skill_item_title_level"
+            style="@style/text_small_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/skill_item_title_part"
+            android:text="Lv5" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="20dp" >
+
+        <TextView
+            android:id="@+id/skill_item_lengque"
+            style="@style/text_second_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="重置时间：10086" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="20dp" >
+
+        <com.leezm.vindictus.utils.MarqueeTextView
+            android:id="@+id/skill_item_remarks"
+            style="@style/text_small_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="秘密房间，逆刃剑，寂寞之刃，墓穴看门人，S2长图秘密房间，逆刃剑，寂寞之刃，墓穴看门人，S2长图" />
+    </RelativeLayout>
+
+</LinearLayout>

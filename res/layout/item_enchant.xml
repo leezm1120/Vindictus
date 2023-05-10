@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="80dp"
+    android:background="#2B2B2B"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <!-- 右边上行 -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="20dp" >
+
+        <TextView
+            android:id="@+id/manual_enchant_title"
+            style="@style/text_big_title"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:text="热忱" />
+
+        <TextView
+            android:id="@+id/manual_enchant_style"
+            style="@style/text_small_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/manual_enchant_level"
+            android:text="进阶" />
+
+        <TextView
+            android:id="@+id/manual_enchant_level"
+            style="@style/text_small_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/manual_enchant_title"
+            android:text="8级" />
+
+        <TextView
+            android:id="@+id/manual_enchant_price"
+            style="@style/text_small_title"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:text="价格100W" />
+        
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal" >
+
+        <com.leezm.vindictus.utils.MarqueeTextView
+            android:id="@+id/manual_enchant_custom_part"
+            style="@style/text_small_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:ellipsize="marquee"
+            android:gravity="left"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="防具" />
+    </LinearLayout>
+
+    <!-- 右边下行 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal" >
+
+        <com.leezm.vindictus.utils.MarqueeTextView
+            android:id="@+id/manual_enchant_custom_attribute"
+            style="@style/text_second_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:ellipsize="marquee"
+            android:gravity="left"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="攻击+998" />
+    </LinearLayout>
+    <!-- 右边下行END -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal" >
+
+        <com.leezm.vindictus.utils.MarqueeTextView
+            android:id="@+id/manual_enchant_custom_provenance"
+            style="@style/text_small_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:ellipsize="marquee"
+            android:gravity="left"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="秘密房间，逆刃剑，寂寞之刃，墓穴看门人，S2长图秘密房间，逆刃剑，寂寞之刃，墓穴看门人，S2长图" />
+    </LinearLayout>
+
+</LinearLayout>

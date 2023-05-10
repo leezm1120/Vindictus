@@ -1,0 +1,705 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/beijingse"
+    android:orientation="vertical"
+    tools:context=".QHFMActivity" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/qhfm_bt_qh"
+            style="@style/img_setting_juhuangse_bg"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp" >
+
+            <TextView
+                android:id="@+id/textView1"
+                style="@style/text_setting"
+                android:text="模拟强化" />
+
+            <ImageView
+                android:id="@+id/qhfm_img_qh"
+                style="@style/img_setting_icon"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/icon_right" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/qhfm_view_qh"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout style="@style/img_setting_bg" >
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            style="@style/text_setting"
+                            android:text="装备初始强化等级：" />
+
+                        <Spinner
+                            android:id="@+id/qhfm_spinner_qh"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/textView2"
+                            android:entries="@array/qhfm_qh_list" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            style="@style/text_qhfm_title"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:text="强化次数" />
+
+                        <TextView
+                            style="@style/text_qhfm_title"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:text="强化石" />
+
+                        <TextView
+                            style="@style/text_qhfm_title"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:text="强化药水" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/qhfm_qh_cishu"
+                            style="@style/text_qhfm_title_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:text="0" />
+
+                        <TextView
+                            android:id="@+id/qhfm_qh_shitou"
+                            style="@style/text_qhfm_title_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:text="0" />
+
+                        <TextView
+                            android:id="@+id/qhfm_qh_yaoshui"
+                            style="@style/text_qhfm_title_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:text="0" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            style="@style/text_qhfm_title"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:text="强化保护石" />
+
+                        <TextView
+                            style="@style/text_qhfm_title"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:text="+11保护石" />
+
+                        <TextView
+                            style="@style/text_qhfm_title"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:text="碎掉装备" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/qhfm_qh_baohushi"
+                            style="@style/text_qhfm_title_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:text="0" />
+
+                        <TextView
+                            android:id="@+id/qhfm_qh_elevenbaohushi"
+                            style="@style/text_qhfm_title_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:text="0" />
+
+                        <TextView
+                            android:id="@+id/qhfm_qh_suidiao"
+                            style="@style/text_qhfm_title_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:text="0" />
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/text_qhfm_title_detail"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:text="理论几率：100/100/100/75/75/50/50/50/40/40/40/40/33/33/33"
+                        android:textColor="#FFFFFF"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:id="@+id/qhfm_qh_jilv"
+                        style="@style/text_qhfm_title_detail"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:text="实际几率：0/0/0/0/0/0/0/0/0/0/0/0/0/0/0"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:id="@+id/qhfm_qh_fail"
+                        style="@style/text_qhfm_title_detail"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:text="失败次数：0/0/0/0/0/0/0/0/0/0/0/0/0/0/0"
+                        android:textColor="#FFFFFF"
+                        android:textSize="11sp" />
+
+                    <RelativeLayout
+                        style="@style/img_setting_bg"
+                        android:layout_marginTop="10dp" >
+
+                        <CheckBox
+                            android:id="@+id/qhfm_qh_checkbox_baohushi"
+                            style="@style/text_setting"
+                            android:text="保护石"
+                            android:textColor="#FFFFFF"
+                            android:textSize="14sp" />
+
+                        <CheckBox
+                            android:id="@+id/qhfm_qh_checkbox_eleven_baohushi"
+                            style="@style/text_setting"
+                            android:layout_toRightOf="@+id/qhfm_qh_checkbox_baohushi"
+                            android:text="11保护石"
+                            android:textColor="#FFFFFF"
+                            android:textSize="14sp" />
+
+                        <CheckBox
+                            android:id="@+id/qhfm_qh_checkbox_zhuangbeicongzhi"
+                            style="@style/text_setting"
+                            android:layout_toRightOf="@+id/qhfm_qh_checkbox_eleven_baohushi"
+                            android:text="失败惩罚"
+                            android:textColor="#FFFFFF"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        style="@style/img_setting_bg"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:layout_margin="20dp" >
+
+                        <RelativeLayout
+                            android:id="@+id/bt_qhfm_qh_reset"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1" >
+
+                            <TextView
+                                style="@style/text_spinner_item"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:gravity="center"
+                                android:text="初始数据" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/bt_qhfm_qh_auto"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1" >
+
+                            <TextView
+                                android:id="@+id/qhfm_qh_auto_text"
+                                style="@style/text_spinner_item"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:gravity="center"
+                                android:text="强化十次" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/bt_qhfm_qh_one"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1" >
+
+                            <TextView
+                                android:id="@+id/qhfm_qh_one_text"
+                                style="@style/text_spinner_item"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:gravity="center"
+                                android:text="强化一下" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/qhfm_bt_fm"
+            style="@style/img_setting_juhuangse_bg"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp" >
+
+            <ImageView
+                android:id="@+id/qhfm_img_fm"
+                style="@style/img_setting_icon"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/icon_right" />
+
+            <TextView
+                style="@style/text_setting"
+                android:text="模拟附魔" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/qhfm_view_fm"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="225dp"
+                android:orientation="horizontal" >
+
+                <!-- 左边total -->
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2" >
+
+                    <TextView
+                        android:id="@+id/qhfm_fm_text_total_br"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="0br"
+                        android:textColor="#F7AB26"
+                        android:textSize="40sp" />
+
+                    <TextView
+                        android:id="@+id/qhfm_fm_text_total_cishu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="15dp"
+                        android:textColor="#FFFFFF"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/qhfm_fm_text_total_br"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="25dp"
+                        android:gravity="center"
+                        android:text="如果魔法力溢出，成功率会大幅度降低，所以请留意一下"
+                        android:textColor="#FFFFFF"
+                        android:textSize="9sp" />
+
+                    <TextView
+                        android:id="@+id/qhfm_fm_text_total_jilv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:textColor="#F7AB26"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/qhfm_fm_text_result"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:textColor="#FF0000" />
+                </RelativeLayout>
+
+                <!-- 右边 br -->
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:id="@+id/qhfm_fm_bulin_mofa"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" >
+
+                        <ImageView
+                            android:id="@+id/imageView1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/enchant_potion_lvl1" />
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignTop="@+id/imageView1"
+                            android:gravity="center"
+                            android:text="魔法灵药"
+                            android:textColor="#FFFFFF"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/imageView1"
+                            android:layout_alignParentRight="true"
+                            android:gravity="center"
+                            android:text="魔法力1~10"
+                            android:textColor="#FFFFFF"
+                            android:textSize="10sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/qhfm_fm_bulin_zufumofa"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" >
+
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/enchant_potion_lvl2" />
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignTop="@+id/imageView2"
+                            android:gravity="center"
+                            android:text="祝福的魔法灵药"
+                            android:textColor="#FFFFFF"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/imageView2"
+                            android:layout_alignParentRight="true"
+                            android:gravity="center"
+                            android:text="魔法力10~50"
+                            android:textColor="#FFFFFF"
+                            android:textSize="10sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/qhfm_fm_bulin_shengmingmofa"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" >
+
+                        <ImageView
+                            android:id="@+id/imageView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/enchant_potion_lvl3" />
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignTop="@+id/imageView3"
+                            android:gravity="center"
+                            android:text="生命的魔法灵药"
+                            android:textColor="#FFFFFF"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/imageView3"
+                            android:layout_alignParentRight="true"
+                            android:gravity="center"
+                            android:text="魔法力3~5"
+                            android:textColor="#FFFFFF"
+                            android:textSize="10sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/qhfm_fm_bulin_wushimofa"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" >
+
+                        <ImageView
+                            android:id="@+id/imageView4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/enchant_potion_br" />
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignTop="@+id/imageView4"
+                            android:gravity="center"
+                            android:text="50魔法灵药"
+                            android:textColor="#FFFFFF"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/imageView4"
+                            android:layout_alignParentRight="true"
+                            android:gravity="center"
+                            android:text="魔法力50"
+                            android:textColor="#FFFFFF"
+                            android:textSize="10sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/qhfm_fm_bulin_yibaimofa"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" >
+
+                        <ImageView
+                            android:id="@+id/imageView5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/enchant_potion_br" />
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignTop="@+id/imageView5"
+                            android:gravity="center"
+                            android:text="100魔法灵药"
+                            android:textColor="#FFFFFF"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/imageView5"
+                            android:layout_alignParentRight="true"
+                            android:gravity="center"
+                            android:text="魔法力100"
+                            android:textColor="#FFFFFF"
+                            android:textSize="10sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 下一行统计 -->
+
+            <RelativeLayout
+                style="@style/img_setting_bg"
+                android:layout_margin="10dp" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    style="@style/text_setting"
+                    android:text="附魔卷轴等级：" />
+
+                <Spinner
+                    android:id="@+id/qhfm_spinner_fm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/textView2"
+                    android:entries="@array/qhfm_fm_list" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/text_qhfm_title"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:text="附魔次数" />
+
+                <TextView
+                    style="@style/text_qhfm_title"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:text="附魔成功" />
+
+                <TextView
+                    style="@style/text_qhfm_title"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:text="实际几率" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/qhfm_fm_zongcishu"
+                    style="@style/text_qhfm_title_detail"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:text="0" />
+
+                <TextView
+                    android:id="@+id/qhfm_fm_chenggongcishu"
+                    style="@style/text_qhfm_title_detail"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:text="0" />
+
+                <TextView
+                    android:id="@+id/qhfm_fm_shijijilv"
+                    style="@style/text_qhfm_title_detail"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:text="0" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/img_setting_bg"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_margin="10dp" >
+
+                <RelativeLayout
+                    android:id="@+id/bt_qhfm_fm_reset"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        style="@style/text_spinner_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:text="初始数据" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/bt_qhfm_fm_go"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        style="@style/text_spinner_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:text="开始附魔" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/qhfm_activity_adview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </FrameLayout>
+
+</LinearLayout>

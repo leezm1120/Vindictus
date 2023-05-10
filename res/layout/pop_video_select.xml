@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_pop_up_window"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+ 		<TextView
+ 		    android:id="@+id/yk_pop_ly_qb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="全部"
+            android:textColor="@color/qianlanse"
+            android:textSize="15sp" />	
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Season"
+            android:textColor="@color/juhuangse"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/yk_pop_ly_s1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="S1"
+            android:textColor="@color/qianlanse"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/yk_pop_ly_s2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="S2"
+            android:textColor="@color/qianlanse"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/yk_pop_ly_s3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="S3"
+            android:textColor="@color/qianlanse"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="角色"
+            android:textColor="@color/juhuangse"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/yk_pop_ly_lisita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="利斯塔"
+            android:textColor="@color/qianlanse"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/yk_pop_ly_feiouna"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="菲欧娜"
+            android:textColor="@color/qianlanse"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/yk_pop_ly_yifei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="伊菲"
+            android:textColor="@color/qianlanse"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/yk_pop_ly_kalu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="卡鲁"
+            android:textColor="@color/qianlanse"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/yk_pop_ly_kaiyi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="凯伊"
+            android:textColor="@color/qianlanse"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/yk_pop_ly_weila"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="维拉"
+            android:textColor="@color/qianlanse"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/yk_pop_ly_huoke"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="霍克"
+            android:textColor="@color/qianlanse"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/yk_pop_ly_lin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="琳"
+            android:textColor="@color/qianlanse"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/yk_pop_ly_ailisha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="艾莉莎"
+            android:textColor="@color/qianlanse"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/yk_pop_ly_haiji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="海基"
+            android:textColor="@color/qianlanse"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/yk_pop_ly_dailiya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="黛莉娅"
+            android:textColor="@color/qianlanse"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>

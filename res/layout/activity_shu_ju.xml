@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+     android:orientation="vertical"
+     android:background="@color/beijingse"
+    tools:context="com.leezm.vindictus.activity.HomeFragment$PlaceholderFragment" >
+
+    
+
+    
+<LinearLayout android:id="@+id/mf_top_tabs"
+    android:layout_width="fill_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal"
+    android:background="#004990">
+    
+     <View
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:layout_height="fill_parent" />
+    
+     <TextView
+            android:id="@+id/mf_bt_one"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:text="装备" />
+
+        <TextView
+            android:id="@+id/mf_bt_two"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:text="附魔" />
+
+        
+
+        <RelativeLayout android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.5">
+
+            <ImageView
+                android:id="@+id/manual_fragment_search"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_sousuo" />
+            
+        </RelativeLayout>
+        
+          
+</LinearLayout>
+
+
+
+    <!-- VIewPager 主要是加载内容的 -->
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/manualview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="2dp" />
+
+</LinearLayout>

@@ -1,0 +1,104 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/beijingse"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@color/shenlanse" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="视频投稿"
+            android:textColor="#FFFFFF" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/video_add_edText"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:hint="在此处粘贴优酷视频链接！"
+        android:textColor="@color/white"
+        android:textColorHint="@color/huise"
+        android:textSize="13sp" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/video_add_video_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="查询视频信息"
+        android:textColor="@color/qianlanse"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/video_add_video_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        />
+
+    <LinearLayout 
+        android:id="@+id/video_add_video_gameinfo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/qianlanse">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+        android:textSize="15sp"
+        android:text="Season"
+        android:layout_gravity="center_vertical" />
+
+        <Spinner
+            android:id="@+id/video_add_video_gameinfo_season"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:entries="@array/video_season" />
+        
+         <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+        android:textSize="15sp"
+        android:text="角色"
+        android:layout_gravity="center_vertical" />
+        
+          <Spinner
+            android:id="@+id/video_add_video_gameinfo_role"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+             android:entries="@array/video_role" />
+         
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/video_add_video_goadd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="确认添加"
+        android:textColor="@color/qianlanse"
+        android:textSize="17sp" />
+    
+</LinearLayout>

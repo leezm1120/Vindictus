@@ -1,0 +1,314 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/beijingse"
+    android:orientation="vertical"
+    tools:context="com.leezm.vindictus.activity.HomeFragment$PlaceholderFragment" >
+
+   <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@color/shenlanse" >
+
+        <com.leezm.vindictus.utils.MarqueeTextView
+            android:id="@+id/simulation_text_notic"
+            style="@style/text_spinner_item"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <!-- 第 1 行 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <!-- 耳环 -->
+
+            <ImageView
+                android:id="@+id/simulation_earrings"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:src="@drawable/earring" />
+            <!-- 头 -->
+
+            <ImageView
+                android:id="@+id/simulation_head"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:src="@drawable/helm" />
+            <!-- 翅膀 -->
+
+            <ImageView
+                android:id="@+id/simulation_"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:src="@drawable/wings" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="10dp" />
+        <!-- 第 2 行 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <!-- 武器 -->
+
+            <ImageView
+                android:id="@+id/simulation_weapons"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:src="@drawable/weapon" />
+            <!-- 胸部 -->
+
+            <ImageView
+                android:id="@+id/simulation_chest"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:src="@drawable/tunic" />
+            <!-- 副武器 -->
+
+            <ImageView
+                android:id="@+id/simulation_deputyweapon"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:src="@drawable/unique" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="10dp" />
+        <!-- 第 3 行 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <!-- 空 -->
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" />
+            <!-- 裤 -->
+
+            <ImageView
+                android:id="@+id/simulation_leg"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:src="@drawable/pants" />
+            <!-- 手部 -->
+
+            <ImageView
+                android:id="@+id/simulation_hand"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:src="@drawable/gloves" />
+        </LinearLayout>
+        <!-- 第4行 -->
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="10dp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <!-- 腰带 -->
+
+            <ImageView
+                android:id="@+id/simulation_belt"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:src="@drawable/belt" />
+            <!-- 脚部 -->
+
+            <ImageView
+                android:id="@+id/simulation_foot"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:src="@drawable/boots" />
+            <!-- 胸针 -->
+
+            <ImageView
+                android:id="@+id/simulation_brooch"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:src="@drawable/jewelry" />
+        </LinearLayout>
+        <!-- 第 5 行 -->
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="10dp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <!-- 戒指1 -->
+
+            <ImageView
+                android:id="@+id/simulation_ringf"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:src="@drawable/ring" />
+            <!-- 工艺品 -->
+
+            <ImageView
+                android:id="@+id/simulation_artware"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:src="@drawable/artifact" />
+            <!-- 戒指2 -->
+
+            <ImageView
+                android:id="@+id/simulation_rings"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:src="@drawable/ring" />
+        </LinearLayout>
+        <!-- 第6行 -->
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="10dp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <!-- 手镯1 -->
+
+            <ImageView
+                android:id="@+id/simulation_braceletf"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:src="@drawable/bracelet" />
+            <!-- 尾巴 -->
+
+            <ImageView
+                android:id="@+id/simulation_roles"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:src="@drawable/renwushux" />
+            <!-- 手镯2 -->
+
+            <ImageView
+                android:id="@+id/simulation_bracelets"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:src="@drawable/bracelet" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@color/qianlanse"
+        android:orientation="horizontal" >
+
+        <!-- 1 -->
+
+
+        <!-- 2 -->
+
+        <RelativeLayout
+            android:id="@+id/bt_simulation_contrastplan"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                style="@style/text_spinner_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="方案对比" />
+        </RelativeLayout>
+        <!-- 2 -->
+
+        <RelativeLayout
+            android:id="@+id/bt_simulation_cleanplan"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                style="@style/text_spinner_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="清空当前" />
+        </RelativeLayout>
+        <!-- 3 -->
+
+        <RelativeLayout
+            android:id="@+id/bt_simulation_checkplan"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                style="@style/text_spinner_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="查看配装" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

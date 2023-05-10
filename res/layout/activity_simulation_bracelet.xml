@@ -1,0 +1,340 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/beijingse"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".SimulationBraceletActivity" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@color/shenlanse" >
+
+        <TextView
+            style="@style/text_setting"
+            android:layout_centerInParent="true"
+            android:text="根据需要填写，留空默认为零" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <!-- 手镯高级 ↓ -->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                style="@style/text_setting"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="手镯高级宝石" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="25dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal" >
+
+                <!-- 输入栏1 -->
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/sj1"
+                        style="@style/text_nine_small_shuxingitem_new"
+                        android:text="攻" />
+
+                    <EditText
+                        android:id="@+id/new_simulation_bracelet_gj_att"
+                        style="@style/text_simulation_edittext_new"
+                        android:layout_toRightOf="@+id/sj1"
+                        android:hint="250-505" >
+                    </EditText>
+                </RelativeLayout>
+                <!-- 输入栏2 -->
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/sj2"
+                        style="@style/text_nine_small_shuxingitem_new"
+                        android:text="防" />
+
+                    <EditText
+                        android:id="@+id/new_simulation_bracelet_gj_def"
+                        style="@style/text_simulation_edittext_new"
+                        android:layout_toRightOf="@+id/sj2"
+                        android:hint="275-583" >
+                    </EditText>
+                </RelativeLayout>
+
+                <!-- 输入栏3 -->
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/sj3"
+                        style="@style/text_nine_small_shuxingitem_new"
+                        android:text="血" />
+
+                    <EditText
+                        android:id="@+id/new_simulation_bracelet_gj_smz"
+                        style="@style/text_simulation_edittext_new"
+                        android:layout_toRightOf="@+id/sj3"
+                        android:hint="300-600" >
+                    </EditText>
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <!-- 手镯高级 ↑ -->
+        <!-- 手镯中级 ↓ -->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                style="@style/text_setting"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="手镯中级宝石" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="25dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal" >
+
+                <!-- 输入栏1 -->
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/sj1"
+                        style="@style/text_nine_small_shuxingitem_new"
+                        android:text="攻" />
+
+                    <EditText
+                        android:id="@+id/new_simulation_bracelet_zj_att"
+                        style="@style/text_simulation_edittext_new"
+                        android:layout_toRightOf="@+id/sj1"
+                        android:hint="125-350" >
+                    </EditText>
+                </RelativeLayout>
+                <!-- 输入栏2 -->
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/sj2"
+                        style="@style/text_nine_small_shuxingitem_new"
+                        android:text="防" />
+
+                    <EditText
+                        android:id="@+id/new_simulation_bracelet_zj_def"
+                        style="@style/text_simulation_edittext_new"
+                        android:layout_toRightOf="@+id/sj2"
+                        android:hint="150-450" >
+                    </EditText>
+                </RelativeLayout>
+
+                <!-- 输入栏3 -->
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/sj3"
+                        style="@style/text_nine_small_shuxingitem_new"
+                        android:text="血" />
+
+                    <EditText
+                        android:id="@+id/new_simulation_bracelet_zj_smz"
+                        style="@style/text_simulation_edittext_new"
+                        android:layout_toRightOf="@+id/sj3"
+                        android:hint="175-450" >
+                    </EditText>
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <!-- 手镯中级 ↑ -->
+        <!-- 手镯低级 ↓ -->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                style="@style/text_setting"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="手镯低级宝石" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="25dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal" >
+
+                <!-- 输入栏1 -->
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/sj1"
+                        style="@style/text_nine_small_shuxingitem_new"
+                        android:text="攻" />
+
+                    <EditText
+                        android:id="@+id/new_simulation_bracelet_dj_att"
+                        style="@style/text_simulation_edittext_new"
+                        android:layout_toRightOf="@+id/sj1"
+                        android:hint="50-175" >
+                    </EditText>
+                </RelativeLayout>
+                <!-- 输入栏2 -->
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/sj2"
+                        style="@style/text_nine_small_shuxingitem_new"
+                        android:text="防" />
+
+                    <EditText
+                        android:id="@+id/new_simulation_bracelet_dj_def"
+                        style="@style/text_simulation_edittext_new"
+                        android:layout_toRightOf="@+id/sj2"
+                        android:hint="50-225" >
+                    </EditText>
+                </RelativeLayout>
+
+                <!-- 输入栏3 -->
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/sj3"
+                        style="@style/text_nine_small_shuxingitem_new"
+                        android:text="血" />
+
+                    <EditText
+                        android:id="@+id/new_simulation_bracelet_dj_smz"
+                        style="@style/text_simulation_edittext_new"
+                        android:layout_toRightOf="@+id/sj3"
+                        android:hint="75-250" >
+                    </EditText>
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <!-- 手镯低级 ↑ -->
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/img_setting_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_margin="10dp" >
+
+        <RelativeLayout
+            android:id="@+id/bt_new_simulation_bracelet_cancel"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                style="@style/text_spinner_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="取消选择" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bt_new_simulation_bracelet_clean"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                style="@style/text_spinner_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="清空数据" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bt_new_simulation_bracelet_save"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                style="@style/text_spinner_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="提交保存" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/simulation_bracelet_activity_adview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </FrameLayout>
+
+</LinearLayout>

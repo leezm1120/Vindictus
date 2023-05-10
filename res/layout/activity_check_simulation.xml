@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/beijingse"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/simulation_check_adview"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@color/shenlanse" >
+<ImageView
+            android:id="@+id/simulation_check_del"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/icon_back" />
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/text_setting"
+            android:text="点击列表删除配装" 
+            android:layout_centerInParent="true"/>
+
+        <ImageView
+            android:id="@+id/simulation_check_save"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/icon_sure" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/simulation_check_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@color/white"
+        android:dividerHeight="1px" >
+    </ListView>
+<FrameLayout
+        android:id="@+id/check_simulation_activity_adview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </FrameLayout>
+</LinearLayout>

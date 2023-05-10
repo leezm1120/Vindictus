@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 90装备选择稀有度 -->
+    <string-array name="simulation_xiyou">
+        <item>橙色</item>
+        <item>紫色</item>
+    </string-array>
+
+    <!-- 90装备技能部位 -->
+    <string-array name="nine_equipment_part">
+        <item>全部</item>
+        <item>武器</item>
+        <item>胸部</item>
+        <item>腿部</item>
+    </string-array>
+
+    <!-- 视频 章节 分类 -->
+    <string-array name="video_season">
+        <item>S1</item>
+         <item>S2</item>
+          <item>S3</item>
+    </string-array>
+    <!-- 视频 角色 分类 -->
+    <string-array name="video_role">
+        <item>全部</item>
+        <item>黛莉娅</item>
+        <item>海基</item>
+        <item>艾莉莎</item>
+        <item>琳</item>
+        <item>霍克</item>
+        <item>维拉</item>
+        <item>凯伊</item>
+        <item>卡鲁</item>
+        <item>伊菲</item>
+        <item>菲欧娜</item>
+        <item>利斯塔</item>
+    </string-array>
+    <!-- 90装备技能等级 -->
+    <string-array name="nine_equipment_level">
+        <item>全部</item>
+        <item>Lv1</item>
+        <item>Lv2</item>
+        <item>Lv3</item>
+        <item>Lv4</item>
+        <item>Lv5</item>
+    </string-array>
+
+    <!-- 赎回等级 -->
+    <string-array name="redemption_levellist">
+        <item>1-59级</item>
+        <item>60-69级</item>
+        <item>70-79级</item>
+        <item>80-85级</item>
+        <item>86-90级</item>
+        <item>工艺品</item>
+    </string-array>
+    <!-- 赎回强化 -->
+    <string-array name="redemption_qianghualist">
+        <item>+0</item>
+        <item>+8</item>
+        <item>+9</item>
+        <item>+10</item>
+        <item>+11</item>
+        <item>+12</item>
+        <item>+13</item>
+        <item>+14</item>
+    </string-array>
+    <!-- 装备附魔模拟 -->
+    <string-array name="qhfm_fm_list">
+        <item>系统附魔</item>
+        <item>7-8级</item>
+        <item>9级</item>
+        <item>A级</item>
+        <item>B级</item>
+        <item>C级</item>
+        <item>D级</item>
+        <item>E级</item>
+        <item>F级</item>
+    </string-array>
+    <!-- 装备模拟强化 -->
+    <string-array name="qhfm_qh_list">
+        <item>+0</item>
+        <item>+1</item>
+        <item>+2</item>
+        <item>+3</item>
+        <item>+4</item>
+        <item>+5</item>
+        <item>+6</item>
+        <item>+7</item>
+        <item>+8</item>
+        <item>+9</item>
+        <item>+10</item>
+        <item>+11</item>
+        <item>+12</item>
+        <item>+13</item>
+        <item>+14</item>
+        <item>+15</item>
+    </string-array>
+    <!-- 赎回品质 -->
+    <string-array name="redemption_pinzhilist">
+        <item>1星</item>
+        <item>2星</item>
+        <item>3星</item>
+        <item>4星</item>
+        <item>5星</item>
+    </string-array>
+    <!-- 强化 -->
+    <string-array name="simulation_equipment_strengthening">
+        <item>+0</item>
+        <item>+8</item>
+        <item>+9</item>
+        <item>+10</item>
+        <item>+11</item>
+        <item>+12</item>
+        <item>+13</item>
+        <item>+14</item>
+        <item>+15</item>
+    </string-array>
+    <!-- 品质 -->
+    <string-array name="simulation_equipment_character">
+        <item>2星</item>
+        <item>1星</item>
+        <item>3星</item>
+        <item>4星</item>
+        <item>5星</item>
+    </string-array>
+    <!-- 精灵石 -->
+    <string-array name="simulation_equipment_infusion">
+        <item>无</item>
+        <item>+134物攻</item>
+        <item>+189魔攻</item>
+        <item>+2平衡</item>
+        <item>+2暴击</item>
+        <item>+1攻速</item>
+        <item>+105防御</item>
+    </string-array>
+    <!-- 模拟器装备类型 -->
+    <string-array name="simulation_equipment">
+        <item>全部</item>
+        <item>布甲</item>
+        <item>皮甲</item>
+        <item>重甲</item>
+        <item>板甲</item>
+    </string-array>
+    <!-- 首页导航 -->
+    <string-array name="bottom_bar_labels">
+        <item>@string/home</item>
+        <!-- <item>@string/notice</item> -->
+        <item>@string/video</item>
+      <!--   <item>@string/manual</item> -->
+        <item>@string/shequu</item>
+      <!--   <item>@string/simulation</item>  -->
+        <item>@string/found</item>
+        <item>@string/me</item>
+    </string-array>
+    <!-- 分类 -->
+    <string-array name="cate_list">
+        <item>@string/recommend</item>
+        <item>@string/jacket</item>
+        <item>@string/skirt</item>
+        <item>@string/trousers</item>
+        <item>@string/shoes</item>
+        <item>@string/bag</item>
+        <item>@string/accessories</item>
+    </string-array>
+    <!-- 装备等级 -->
+    <string-array name="equipment_level">
+        <item>Lv90</item>
+        <item>Lv80</item>
+        <item>Lv70</item>
+        <item>Lv60</item>
+        <item>60以下</item>
+        <item>Lv0</item>
+    </string-array>
+    <!-- 数据搜索 -->
+    <string-array name="manual_search">
+        <item>装备</item>
+        <item>附魔</item>
+    </string-array>
+    <!-- 职业 -->
+    <string-array name="role_list">
+        <item>黛莉娅</item>
+        <item>海基</item>
+        <item>艾莉莎</item>
+        <item>琳</item>
+        <item>霍克</item>
+        <item>维拉</item>
+        <item>凯伊</item>
+        <item>卡鲁</item>
+        <item>伊菲</item>
+        <item>菲欧娜</item>
+        <item>利斯塔</item>
+    </string-array>
+    <!-- 附魔等级 -->
+    <string-array name="enchant_level">
+        <item>全部</item>
+        <item>7级</item>
+        <item>8级</item>
+        <item>9级</item>
+        <item>A级</item>
+        <item>B级</item>
+        <item>C级</item>
+        <item>D级</item>
+        <item>E级</item>
+        <item>F级</item>
+    </string-array>
+    <!-- 头衔类型 -->
+    <string-array name="title_type">
+        <item>全部</item>
+        <item>功绩</item>
+        <item>道具</item>
+        <item>副本</item>
+        <item>技能</item>
+        <item>活动</item>
+        <item>剧情</item>
+        <item>破坏</item>
+        <item>其他</item>
+        <item>套装</item>
+        <item>小怪</item>
+        <item>PVP</item>
+        <item>YY</item>
+    </string-array>
+    <!-- 附魔部位 -->
+    <string-array name="enchant_part">
+        <item>全部</item>
+        <item>武器</item>
+        <item>防具</item>
+        <item>首饰</item>
+        <item>副武器</item>
+    </string-array>
+    <!-- 附魔类型 -->
+    <string-array name="enchant_style">
+        <item>全部</item>
+        <item>首次</item>
+        <item>进阶</item>
+    </string-array>
+
+    <!-- BOSS区域 -->
+    <string-array name="boss_quyu">
+        <item>全部</item>
+        <item>梵赛诺</item>
+        <item>莫勒班</item>
+        <item>罗切斯特</item>
+        <item>库汗</item>
+    </string-array>
+    <!-- 副本攻略地图 -->
+    <string-array name="area_tips_map">
+        <item>梵赛诺</item>
+        <item>莫勒班</item>
+        <item>罗切斯特</item>
+        <item>库汗</item>
+    </string-array>
+    <!-- 副本攻略区域 -->
+    <string-array name="area_tips_area">
+        <item>新月岛</item>
+        <item>船之坟墓</item>
+        <item>时光沙漠</item>
+        <item>神月峰</item>
+        <item>安雯</item>
+    </string-array>
+    <!-- 类型 -->
+    <string-array name="style_list">
+        <item>全部</item>
+        <item>武器</item>
+        <item>防具</item>
+        <item>首饰</item>
+        <item>副武器</item>
+    </string-array>
+
+</resources>

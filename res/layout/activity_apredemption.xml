@@ -1,0 +1,129 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/beijingse"
+    android:orientation="vertical"
+    tools:context=".APRedemptionActivity" >
+
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@color/shenlanse" >
+
+        <TextView
+            android:id="@+id/redemption_total"
+            style="@style/text_setting"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="20dp" />
+
+    <RelativeLayout style="@style/img_setting_bg" >
+
+        <TextView
+            android:id="@+id/qq1"
+            style="@style/text_setting"
+            android:text="等级:" />
+
+        <Spinner
+            android:id="@+id/redemption_level"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/qq1"
+            android:dropDownWidth="100dp"
+            android:entries="@array/redemption_levellist"
+            android:spinnerMode="dropdown" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="20dp" />
+
+    <RelativeLayout style="@style/img_setting_bg" >
+
+        <TextView
+            android:id="@+id/qq2"
+            style="@style/text_setting"
+            android:text="强化:" />
+
+        <Spinner
+            android:id="@+id/redemption_qianghua"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/qq2"
+            android:dropDownWidth="100dp"
+            android:entries="@array/redemption_qianghualist"
+            android:spinnerMode="dropdown" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="20dp" />
+
+    <RelativeLayout style="@style/img_setting_bg" >
+
+        <TextView
+            android:id="@+id/qq3"
+            style="@style/text_setting"
+            android:text="品质:" />
+
+        <Spinner
+            android:id="@+id/redemption_pinzhi"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/qq3"
+            android:dropDownWidth="100dp"
+            android:entries="@array/redemption_pinzhilist"
+            android:spinnerMode="dropdown" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="20dp" />
+
+    <RelativeLayout style="@style/img_setting_bg" >
+
+        <TextView
+            android:id="@+id/qq4"
+            style="@style/text_setting"
+            android:text="附魔:" />
+
+        <CheckBox
+            android:id="@+id/redemption_enchant_first"
+            style="@style/text_setting"
+            android:layout_toRightOf="@+id/qq4"
+            android:text="首次"
+            android:textColor="#FFFFFF" />
+
+        <CheckBox
+            android:id="@+id/redemption_enchant_second"
+            style="@style/text_setting"
+            android:layout_toRightOf="@+id/redemption_enchant_first"
+            android:text="进阶"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            style="@style/text_setting"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:text="6-9级" />
+
+    </RelativeLayout>
+</LinearLayout>
+<FrameLayout
+        android:id="@+id/apredemption_activity_adview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </FrameLayout>
+</LinearLayout>

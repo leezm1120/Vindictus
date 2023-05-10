@@ -1,0 +1,183 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/beijingse"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@color/qianlanse"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/textView1"
+                style="@style/text_spinner_item"
+                android:text="强化" />
+
+            <Spinner
+                android:id="@+id/simulation_other_spinner_qianghua"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/textView1"
+                android:dropDownWidth="100dp"
+                android:entries="@array/simulation_equipment_strengthening"
+                android:spinnerMode="dropdown" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/textView1"
+                style="@style/text_spinner_item"
+                android:text="精灵石" />
+
+            <Spinner
+                android:id="@+id/simulation_other_spinner_jinglingshi"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/textView1"
+                android:dropDownWidth="100dp"
+                android:entries="@array/simulation_equipment_infusion"
+                android:spinnerMode="dropdown" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/textView1"
+                style="@style/text_spinner_item"
+                android:text="品质" />
+
+            <Spinner
+                android:id="@+id/simulation_other_spinner_pinzhi"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/textView1"
+                android:dropDownWidth="100dp"
+                android:entries="@array/simulation_equipment_character"
+                android:spinnerMode="dropdown" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="20dp" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp" >
+
+            <TextView
+                android:id="@+id/qa1"
+                style="@style/text_setting"
+                android:text="强化：" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/simulation_txt_qianghua"
+            style="@style/text_setting"
+            android:textColor="@color/juhuangse" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="20dp" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp" >
+
+            <TextView
+                android:id="@+id/qa1"
+                style="@style/text_setting"
+                android:text="精灵石：" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/simulation_txt_jinglingshi"
+            style="@style/text_setting"
+            android:textColor="@color/juhuangse" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="20dp" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp" >
+
+            <TextView
+                android:id="@+id/qa1"
+                style="@style/text_setting"
+                android:text="品质：" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/simulation_txt_pinzhi"
+            style="@style/text_setting"
+            android:textColor="@color/juhuangse" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/img_setting_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_margin="10dp" >
+
+        <RelativeLayout
+            android:id="@+id/bt_simulation_choose_qita_clean"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                style="@style/text_spinner_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="还原默认" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bt_simulation_choose_qita_save"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                style="@style/text_spinner_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="提交保存" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

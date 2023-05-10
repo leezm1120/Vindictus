@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".RolesSkillsDetailActivity"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/beijingse" >
+
+<RelativeLayout android:layout_width="fill_parent"
+    android:layout_height="40dp"
+    android:background="@color/shenlanse">
+
+    <TextView
+        android:id="@+id/roles_skills_biaoti"
+        style="@style/text_setting"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="TextView" />
+    
+</RelativeLayout>
+    
+    <ListView 
+        android:id="@+id/roles_skills_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@color/white"
+        android:dividerHeight="1px">
+        
+    </ListView>
+
+</LinearLayout>

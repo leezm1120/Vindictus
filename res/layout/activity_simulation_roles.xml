@@ -1,0 +1,220 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/beijingse"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context=".SimulationRolesActivity" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@color/shenlanse" >
+
+        <TextView
+            style="@style/text_setting"
+            android:layout_centerInParent="true"
+            android:text="请输入无装备人物属性" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="25dp"
+            android:layout_margin="10dp"
+            android:orientation="horizontal" >
+
+            <!-- 输入栏1 -->
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/rw1"
+                    style="@style/text_nine_small_shuxingitem_new"
+                    android:text="力" />
+
+                <EditText
+                    android:id="@+id/new_simulation_roles_str"
+                    style="@style/text_simulation_edittext_new"
+                    android:layout_toRightOf="@+id/rw1"
+                    android:hint="0" >
+                </EditText>
+            </RelativeLayout>
+            <!-- 输入栏2 -->
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/rw2"
+                    style="@style/text_nine_small_shuxingitem_new"
+                    android:text="敏" />
+
+                <EditText
+                    android:id="@+id/new_simulation_roles_minjie"
+                    style="@style/text_simulation_edittext_new"
+                    android:layout_toRightOf="@+id/rw2"
+                    android:hint="0" >
+                </EditText>
+            </RelativeLayout>
+
+            <!-- 输入栏3 -->
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/rw3"
+                    style="@style/text_nine_small_shuxingitem_new"
+                    android:text="血" />
+
+                <EditText
+                    android:id="@+id/new_simulation_roles_smz"
+                    style="@style/text_simulation_edittext_new"
+                    android:layout_toRightOf="@+id/rw3" 
+                    android:hint="0">
+                </EditText>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="25dp"
+            android:layout_margin="10dp"
+            android:orientation="horizontal" >
+
+            <!-- 输入栏1 -->
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/rw4"
+                    style="@style/text_nine_small_shuxingitem_new"
+                    android:text="智" />
+
+                <EditText
+                    android:id="@+id/new_simulation_roles_zhili"
+                    style="@style/text_simulation_edittext_new"
+                    android:layout_toRightOf="@+id/rw4"
+                    android:hint="0" >
+                </EditText>
+            </RelativeLayout>
+            <!-- 输入栏2 -->
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/rw5"
+                    style="@style/text_nine_small_shuxingitem_new"
+                    android:text="意" />
+
+                <EditText
+                    android:id="@+id/new_simulation_roles_yizhi"
+                    style="@style/text_simulation_edittext_new"
+                    android:layout_toRightOf="@+id/rw5"
+                    android:hint="0" >
+                </EditText>
+            </RelativeLayout>
+
+            <!-- 输入栏3 -->
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/rw6"
+                    style="@style/text_nine_small_shuxingitem_new"
+                    android:text="体" />
+
+                <EditText
+                    android:id="@+id/new_simulation_roles_tili"
+                    style="@style/text_simulation_edittext_new"
+                    android:layout_toRightOf="@+id/rw6"
+                    android:hint="0" >
+                </EditText>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/img_setting_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_margin="10dp" >
+
+        <RelativeLayout
+            android:id="@+id/bt_new_simulation_roles_cancel"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                style="@style/text_spinner_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="取消选择" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bt_new_simulation_roles_clean"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                style="@style/text_spinner_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="清空数据" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bt_new_simulation_roles_save"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                style="@style/text_spinner_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="提交保存" />
+        </RelativeLayout>
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/roles_simulation_activity_adview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </FrameLayout>
+</LinearLayout>

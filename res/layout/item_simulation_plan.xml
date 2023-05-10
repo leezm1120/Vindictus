@@ -1,0 +1,227 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/beijingse"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/simulation_checkdifferent_title"
+            style="@style/text_big_title"
+            android:layout_height="wrap_content"
+            android:text="asdasda"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="3dp" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="20dp" >
+
+            <TextView
+                android:id="@+id/q1"
+                style="@style/text_small_shuxingitemgongji"
+                android:layout_centerVertical="true"
+                android:text="攻" />
+
+            <TextView
+                android:id="@+id/simulation_checkdifferent_att"
+                style="@style/text_small_shuxing"
+                android:layout_toRightOf="@+id/q1"
+                android:text="9556" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="20dp" >
+
+            <TextView
+                android:id="@+id/q2"
+                style="@style/text_small_shuxingitemsiwei"
+                android:layout_centerVertical="true"
+                android:text="力" />
+
+            <TextView
+                android:id="@+id/simulation_checkdifferent_str"
+                style="@style/text_small_shuxing"
+                android:layout_toRightOf="@+id/q2"
+                android:text="9556" />
+        </RelativeLayout>
+<RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="20dp" >
+
+            <TextView
+                android:id="@+id/q3"
+                style="@style/text_small_shuxingitemsiwei"
+                android:layout_centerVertical="true"
+                android:text="智" />
+
+            <TextView
+                android:id="@+id/simulation_checkdifferent_mint"
+                style="@style/text_small_shuxing"
+                android:layout_toRightOf="@+id/q3"
+                android:text="9556" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="20dp" >
+
+            <TextView
+                android:id="@+id/q4"
+                style="@style/text_small_shuxingitemsiwei"
+                android:layout_centerVertical="true"
+                android:text="敏" />
+
+            <TextView
+                android:id="@+id/simulation_checkdifferent_agi"
+                style="@style/text_small_shuxing"
+                android:layout_toRightOf="@+id/q4"
+                android:text="9556" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="20dp" >
+
+            <TextView
+                android:id="@+id/q5"
+                style="@style/text_small_shuxingitemsiwei"
+                android:layout_centerVertical="true"
+                android:text="意" />
+
+            <TextView
+                android:id="@+id/simulation_checkdifferent_wil"
+                style="@style/text_small_shuxing"
+                android:layout_toRightOf="@+id/q5"
+                android:text="9556" />
+        </RelativeLayout>
+    <!-- 右边下行END -->
+
+
+
+       <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="20dp" >
+
+            <TextView
+                android:id="@+id/w1"
+                style="@style/text_small_shuxingitemsanwei"
+                android:layout_centerVertical="true"
+                android:text="衡" />
+
+            <TextView
+                android:id="@+id/simulation_checkdifferent_bal"
+                style="@style/text_small_shuxing"
+                android:layout_toRightOf="@+id/w1"
+                android:text="9556" />
+        </RelativeLayout>
+
+      <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="20dp" >
+
+            <TextView
+                android:id="@+id/w2"
+                style="@style/text_small_shuxingitemsanwei"
+                android:layout_centerVertical="true"
+                android:text="速" />
+
+            <TextView
+                android:id="@+id/simulation_checkdifferent_att_spd"
+                style="@style/text_small_shuxing"
+                android:layout_toRightOf="@+id/w2"
+                android:text="9556" />
+        </RelativeLayout>
+
+      <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="20dp" >
+
+            <TextView
+                android:id="@+id/w3"
+                style="@style/text_small_shuxingitemsanwei"
+                android:layout_centerVertical="true"
+                android:text="暴" />
+
+            <TextView
+                android:id="@+id/simulation_checkdifferent_critical"
+                style="@style/text_small_shuxing"
+                android:layout_toRightOf="@+id/w3"
+                android:text="9556" />
+        </RelativeLayout>
+      <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="20dp" >
+
+            <TextView
+                android:id="@+id/w6"
+                style="@style/text_small_shuxingitem"
+                android:layout_centerVertical="true"
+                android:text="体" />
+
+            <TextView
+                android:id="@+id/simulation_checkdifferent_tili"
+                style="@style/text_small_shuxing"
+                android:layout_toRightOf="@+id/w6"
+                android:text="9556" />
+        </RelativeLayout>  
+      
+<RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="20dp" >
+
+            <TextView
+                android:id="@+id/w4"
+                style="@style/text_small_shuxingitem"
+                android:layout_centerVertical="true"
+                android:text="防" />
+
+            <TextView
+                android:id="@+id/simulation_checkdifferent_def"
+                style="@style/text_small_shuxing"
+                android:layout_toRightOf="@+id/w4"
+                android:text="9556" />
+        </RelativeLayout>
+
+      <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="20dp" >
+
+            <TextView
+                android:id="@+id/w5"
+                style="@style/text_small_shuxingitem"
+                android:layout_centerVertical="true"
+                android:text="抗" />
+
+            <TextView
+                android:id="@+id/simulation_checkdifferent_critresist"
+                style="@style/text_small_shuxing"
+                android:layout_toRightOf="@+id/w5"
+                android:text="9556" />
+        </RelativeLayout>
+<RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="20dp" >
+
+            <TextView
+                android:id="@+id/w6"
+                style="@style/text_small_shuxingitemgongji"
+                android:layout_centerVertical="true"
+                android:text="血" />
+
+            <TextView
+                android:id="@+id/simulation_checkdifferent_xueliang"
+                style="@style/text_small_shuxing"
+                android:layout_toRightOf="@+id/w6"
+                android:text="9556" />
+        </RelativeLayout>
+</LinearLayout>

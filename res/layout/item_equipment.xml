@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/beijingse"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="20dp" >
+
+        <TextView
+            android:id="@+id/manual_equipment_title"
+            style="@style/text_big_title"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:text="贵族重剑" />
+
+        <TextView
+            android:id="@+id/manual_equipment_level"
+            style="@style/text_small_tips"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/manual_equipment_title"
+            android:text="Lv80" />
+
+        <TextView
+            android:id="@+id/manual_equipment_remarks"
+            style="@style/text_small_tips"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/manual_equipment_level"
+            android:text="remarks" />
+    </RelativeLayout>
+    <!-- 右边上行END -->
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="4dp" />
+    <!-- 右边下行 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/a1"
+                style="@style/text_small_shuxingitem"
+                android:layout_centerVertical="true"
+                android:text="攻" />
+
+            <TextView
+                android:id="@+id/manual_equipment_att"
+                style="@style/text_small_shuxing"
+                android:layout_toRightOf="@+id/a1"
+                android:text="9556" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/a2"
+                style="@style/text_small_shuxingitem"
+                android:layout_centerVertical="true"
+                android:text="力" />
+
+            <TextView
+                android:id="@+id/manual_equipment_str"
+                style="@style/text_small_shuxing"
+                android:layout_toRightOf="@+id/a2"
+                android:text="9556" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/a3"
+                style="@style/text_small_shuxingitem"
+                android:layout_centerVertical="true"
+                android:text="智" />
+
+            <TextView
+                android:id="@+id/manual_equipment_mint"
+                style="@style/text_small_shuxing"
+                android:layout_toRightOf="@+id/a3"
+                android:text="9556" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/a4"
+                style="@style/text_small_shuxingitem"
+                android:layout_centerVertical="true"
+                android:text="敏" />
+
+            <TextView
+                android:id="@+id/manual_equipment_agi"
+                style="@style/text_small_shuxing"
+                android:layout_toRightOf="@+id/a4"
+                android:text="9556" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/a5"
+                style="@style/text_small_shuxingitem"
+                android:layout_centerVertical="true"
+                android:text="意" />
+
+            <TextView
+                android:id="@+id/manual_equipment_wil"
+                style="@style/text_small_shuxing"
+                android:layout_toRightOf="@+id/a5"
+                android:text="9556" />
+        </RelativeLayout>
+    </LinearLayout>
+    <!-- 右边下行END -->
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/b1"
+                style="@style/text_small_shuxingitemsanwei"
+                android:layout_centerVertical="true"
+                android:text="衡" />
+
+            <TextView
+                android:id="@+id/manual_equipment_bal"
+                style="@style/text_small_shuxing"
+                android:layout_toRightOf="@+id/b1"
+                android:text="9556" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/b2"
+                style="@style/text_small_shuxingitemsanwei"
+                android:layout_centerVertical="true"
+                android:text="速" />
+
+            <TextView
+                android:id="@+id/manual_equipment_att_spd"
+                style="@style/text_small_shuxing"
+                android:layout_toRightOf="@+id/b2"
+                android:text="9556" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/b3"
+                style="@style/text_small_shuxingitemsanwei"
+                android:layout_centerVertical="true"
+                android:text="暴" />
+
+            <TextView
+                android:id="@+id/manual_equipment_critical"
+                style="@style/text_small_shuxing"
+                android:layout_toRightOf="@+id/b3"
+                android:text="9556" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/b4"
+                style="@style/text_small_shuxingitem"
+                android:layout_centerVertical="true"
+                android:text="防" />
+
+            <TextView
+                android:id="@+id/manual_equipment_def"
+                style="@style/text_small_shuxing"
+                android:layout_toRightOf="@+id/b4"
+                android:text="9556" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/b5"
+                style="@style/text_small_shuxingitem"
+                android:layout_centerVertical="true"
+                android:text="抗" />
+
+            <TextView
+                android:id="@+id/manual_equipment_critresist"
+                style="@style/text_small_shuxing"
+                android:layout_toRightOf="@+id/b5"
+                android:text="9556" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

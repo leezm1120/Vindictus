@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:padding="5dp"
+    android:background="@color/beijingse"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp" >
+
+        <TextView
+            android:id="@+id/item_notice_type"
+            style="@style/text_small_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:text="资讯"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <com.leezm.vindictus.utils.MarqueeTextView
+            android:id="@+id/item_notice_title"
+            style="@style/text_big_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toLeftOf="@+id/item_notice_date"
+            android:layout_toRightOf="@+id/item_notice_type"
+            android:ellipsize="marquee"
+            android:gravity="left"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="春色无边 《洛奇英雄传》新内衣新发型上线"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/item_notice_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:text="[03/15]"
+            android:textColor="@color/huise"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</LinearLayout>

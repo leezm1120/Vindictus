@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="100dp"
+    android:background="#2B2B2B"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <!-- 右边上行 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="20dp" >
+
+        <TextView
+            android:id="@+id/found_boss_title"
+            style="@style/text_big_title"
+            android:text="鲁格" />
+    </LinearLayout>
+    <!-- 右边上行END -->
+
+    <TextView
+        android:id="@+id/found_boss_area"
+        style="@style/text_small_title"
+        android:layout_height="20dp"
+        android:gravity="center_vertical"
+        android:text="莫乐班" />
+
+    <!-- 右边下行 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/found_boss_att"
+            style="@style/text_second_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="攻击力:16400" />
+
+        <TextView
+            android:id="@+id/found_boss_def"
+            style="@style/text_second_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="防御:13000" />
+
+        <TextView
+            android:id="@+id/found_boss_resist"
+            style="@style/text_second_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="暴抗:80" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/found_boss_remarksa"
+        style="@style/text_small_title"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:gravity="center_vertical" />
+    <!-- 右边下行END -->
+
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/beijingse"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/youku_viewo_ly_select"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/icon_select_v" />
+
+            <TextView
+                android:id="@+id/youku_viewo_ly_select_text"
+                style="@style/text_big_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/imageView1"
+                android:text="S1"
+                android:textColor="@color/juhuangse" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/youku_viewo_ly_search_ed"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_pop"
+            android:hint="搜索你想了解的视频"
+            android:textColor="@color/white"
+            android:textColorHint="@color/huise"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/youku_viewo_ly_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:src="@drawable/icon_search_v" />
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/video_fragment_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@color/baise"
+        android:dividerHeight="1px" >
+    </ListView>
+
+</LinearLayout>

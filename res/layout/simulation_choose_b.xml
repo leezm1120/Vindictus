@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/beijingse"
+    android:orientation="vertical" >
+
+<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@color/qianlanse"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+    <RelativeLayout
+            android:id="@+id/simulation_back"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5" >
+        </RelativeLayout>
+    
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/textView1"
+                style="@style/text_spinner_item"
+                android:text="等级" />
+
+            <Spinner
+                android:id="@+id/simulation_enchant_spinner_level"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/textView1"
+                android:dropDownWidth="100dp"
+                android:entries="@array/enchant_level"
+                android:spinnerMode="dropdown" />
+        </RelativeLayout>
+
+        
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/textView1"
+                style="@style/text_spinner_item"
+                android:text="类型" />
+
+            <Spinner
+                android:id="@+id/simulation_enchant_spinner_type"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/textView1"
+                android:dropDownWidth="100dp"
+                android:entries="@array/enchant_style"
+                android:spinnerMode="dropdown" />
+        </RelativeLayout>
+          <RelativeLayout
+            android:id="@+id/simulation_sure"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5" >
+        </RelativeLayout>
+    </LinearLayout>
+<ListView
+        android:id="@+id/simulation_enchant_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="@color/baise"
+        android:dividerHeight="1px" >
+    </ListView>
+
+</LinearLayout>
